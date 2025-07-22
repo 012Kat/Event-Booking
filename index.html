@@ -1,0 +1,42 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Ticket Warehouse</h1>
+    <p>Reserve your spot for upcoming events</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <form id="bookingForm">
+        <label>
+          Full Name:
+          <input type="text" id="name" required />
+        </label>
+        <label>
+          Event:
+          <select id="event" required>
+            <option value="">Select Event</option>
+            <option value="Tech Conference">Tech Conference</option>
+            <option value="Art Workshop">Art Workshop</option>
+            <option value="Music Fest">Music Fest</option>
+          </select>
+        </label>
+        <label>
+          Tickets:
+          <input type="number" id="tickets" min="1" max="10" required />
+        </label>
+        <button type="submit">Book Now</button>
+      </form>
+      <p id="confirmation"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
